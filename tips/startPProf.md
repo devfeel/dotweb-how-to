@@ -1,17 +1,20 @@
+
 * How To:
-  - how to add support "HEAD" method for all requests in your app?
+  - how to start golang pprof-server in your app?
   ~~~go
   func main() {
     app := dotweb.Classic("/home/logs/wwwroot/")
 
-    // if use this, all router will auto add "HEAD" method support
-    // default is false
-    app.HttpServer.SetEnabledAutoHEAD(true)
+
+    //set enabled pprof http server on port 8081
+    //you can curl http://127.0.0.1:8081/debug/pprof
+    app.SetPProfConfig(true, 8081)
 
     app.HttpServer.GET("/index", func(ctx dotweb.Context) error{
         return ctx.WriteString("welcome to my first web!")
     })
 
+    //begin server
     err := app.StartServer(80)
     fmt.Println("dotweb.StartServer error => ", err)
   }

@@ -1,5 +1,5 @@
 * How To:
-  - how to add support static files request in your httpserver?
+  - how to add support static files request in your app?
   ~~~go
   func main() {
     app := dotweb.Classic("/home/wwwroot/logs/")
