@@ -24,7 +24,7 @@ func init() {
 	fmt.Println(`  / / / / / __ \ / __/| | /| / / / _ \  / __ \`)
 	fmt.Println(` / /_/ / / /_/ // /_  | |/ |/ / /  __/ / /_/ /`)
 	fmt.Println(`/_____/  \____/ \__/  |__/|__/  \___/ /_.___/`)
-	fmt.Println(`                              `)
+	fmt.Println(``)
 	fmt.Println(`                2019新春抽奖活动              `)
 	fmt.Println(` https://github.com/devfeel/dotweb/issues/181`)
 	fmt.Println(``)
