@@ -67,7 +67,7 @@ func main() {
 	}
 
 	fmt.Println(``)
-	fmt.Println("抽检结束，恭喜以上用户！")
+	fmt.Println("抽奖结束，恭喜以上用户！")
 }
 
 func removeUser(user string) {
