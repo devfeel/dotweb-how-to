@@ -25,10 +25,11 @@ func init() {
 	fmt.Println(` / /_/ / / /_/ // /_  | |/ |/ / /  __/ / /_/ /`)
 	fmt.Println(`/_____/  \____/ \__/  |__/|__/  \___/ /_.___/`)
 	fmt.Println(``)
-	fmt.Println(`              → 2019新春抽奖活动 ←              `)
-	fmt.Println(`https://github.com/devfeel/dotweb/issues/181`)
+	fmt.Println(`             → 2019新春抽奖活动 ←              `)
+	fmt.Println(`     https://github.com/devfeel/dotweb      `)
 	fmt.Println(``)
 
+	fmt.Println(`活动地址: https://github.com/devfeel/dotweb/issues/181`)
 	fmt.Println("初始化名单，共计", len(userPool), "人")
 	fmt.Println("名单公示：", userPool)
 	fmt.Println(``)
