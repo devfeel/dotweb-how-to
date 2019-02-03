@@ -10,7 +10,7 @@ import (
 var userPool map[string]int
 var luckySeed map[int]string
 var totalSeed int
-var userNames string = "bibibi-bug,dotqi,WithLin,youzizzz,zcmiao190,wbly7758,misasky,qizhenshuai,motanzg,Wooshawn,itstudying,vhuyuy,jokerddj,tianguozhifeng,SHIJIEZ,gumochengxing,dfy167,LyricTian,hades2013,vinnking,wweir,violetgo,Imhven,xskingdeekis,wangyun111,memoryxyd,chplain,willxuecn,yibalaodao,xiang2lin,lyw1995,hacfox,xingliuhua,yrx1354,mfcab,hunterfall,solarhell,thesilent,lhkzx007,171869092,haphupan,921034403,yuzhoutong,baidw,Sakurasan,NightFarmer,imxyb,xiam123,qbmiller,Uncho,LinlinDu,shaocongcong,sayhei,lvchengchang,le0l1,1509477745,dcwang1989,swing4,archer-bao,sszgr,83103005,qq976739120,aredcup,sowhaton,angusguo,royromny,wx7217242,thhy,rongxr,MonkeyInWind"
+var userNames string = "bibibi-bug,dotqi,WithLin,youzizzz,zcmiao190,wbly7758,misasky,qizhenshuai,motanzg,Wooshawn,itstudying,vhuyuy,jokerddj,tianguozhifeng,SHIJIEZ,gumochengxing,dfy167,LyricTian,hades2013,vinnking,wweir,violetgo,Imhven,xskingdeekis,wangyun111,memoryxyd,chplain,willxuecn,yibalaodao,xiang2lin,lyw1995,hacfox,xingliuhua,yrx1354,mfcab,hunterfall,solarhell,thesilent,lhkzx007,171869092,haphupan,921034403,yuzhoutong,baidw,Sakurasan,NightFarmer,imxyb,xiam123,qbmiller,Uncho,LinlinDu,shaocongcong,sayhei,lvchengchang,le0l1,1509477745,dcwang1989,swing4,archer-bao,sszgr,83103005,qq976739120,aredcup,sowhaton,angusguo,royromny,wx7217242,thhy,rongxr,MonkeyInWind,Fang-Li,hbk100"
 
 func init() {
 	userPool = make(map[string]int)
@@ -51,11 +51,12 @@ func resolveLuckySeed() {
 func main() {
 	rand.Seed(time.Now().UnixNano())
 	fmt.Println("开始抽奖倒计时！")
-	fmt.Println("倒数1秒")
+	fmt.Println("执行时间:[", time.Now().Format("2006-01-02 15:04:05"), "]")
+	fmt.Print("倒数...1秒")
 	time.Sleep(time.Second)
-	fmt.Println("倒数2秒")
+	fmt.Print(" ...2秒")
 	time.Sleep(time.Second)
-	fmt.Println("倒数3秒")
+	fmt.Print(" ...3秒")
 	time.Sleep(time.Second)
 	fmt.Println(``)
 	for i := 0; i < 3; i++ {
