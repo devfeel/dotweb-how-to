@@ -62,7 +62,7 @@ func main() {
 	fmt.Print(" ...3秒")
 	time.Sleep(time.Second)
 	fmt.Println(``)
-	for i := 0; i < 2; i++ {
+	for i := 1; i < 3; i++ {
 		seed := rand.Intn(totalSeed)
 		luckyUser := luckySeed[seed]
 		fmt.Println("用户池:", totalSeed, "随机数:", seed, "获奖用户:", luckyUser)
